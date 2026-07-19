@@ -630,7 +630,7 @@ static struct option long_options[] = {
 static void parse_params(int argc, char **argv)
 {
     while(1) {
-	int c = getopt_long (argc, argv, "a:p:d:f:vschV", long_options, NULL);
+	int c = getopt_long (argc, argv, "a:p:d:fvschV", long_options, NULL);
 	if (c == -1)
 	    break;
 	switch(c) {
